@@ -36,7 +36,7 @@ public class TestCoronavirus {
 	    //ERROR: Caught exception [Error: locator strategy either id or name must be specified explicitly.]
 	    assertThat("UADY Virtual Educación Superior: Ingresar al sitio",is(textoEjecucion));
 	  }*/
-  /*@Test
+  @Test
   public void testDatosIncorrectos() throws Exception {
     driver.get("https://es.uadyvirtual.uady.mx/login/index.php");
     driver.findElement(By.id("username")).click();
@@ -49,7 +49,7 @@ public class TestCoronavirus {
     String textoEjecucion = driver.findElement(By.xpath("/html/body/div[1]/div[2]/div/section/div/div[2]/div/div/div/div/div[1]/div")).getText();
     String textoEsperado = "Datos erróneos. Por favor, inténtelo otra vez.";
     assertThat(textoEsperado, is(textoEjecucion));
-  }*/
+  }
     
   @Test
   public void testDatosCorrectos() throws Exception {
@@ -58,11 +58,11 @@ public class TestCoronavirus {
     driver.findElement(By.id("username")).clear();
     driver.findElement(By.id("username")).sendKeys("a18211328");
     driver.findElement(By.id("password")).clear();
-    driver.findElement(By.id("password")).sendKeys("L");
+    driver.findElement(By.id("password")).sendKeys("Licho1998");
     driver.findElement(By.id("loginbtn")).click();
     pause(5000);
     String textoEjecucion = driver.findElement(By.xpath("/html/body/div[2]/nav/ul[2]/li[2]/div/div/div/div/div/a/span/span[1]")).getText();
-    String textoEsperado = "LUIS ALBERTO PENICHE CHABLE";
+    String textoEsperado = "Nombre prueba CI";
     assertThat(textoEsperado, is(textoEjecucion));
   }
     
