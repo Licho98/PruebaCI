@@ -27,7 +27,7 @@ public class TestCoronavirus {
     js = (JavascriptExecutor) driver;
   }
 
-  /*@Test
+  @Test
   public void testUntitledTestCase() throws Exception {
 	    driver.get("https://es.uadyvirtual.uady.mx/");
 	   
@@ -36,7 +36,7 @@ public class TestCoronavirus {
 	    //ERROR: Caught exception [Error: locator strategy either id or name must be specified explicitly.]
 	    assertThat("UADY Virtual Educación Superior: Ingresar al sitio",is(textoEjecucion));
 	  }
-  @Test
+  /*@Test
   public void testDatosIncorrectos() throws Exception {
     driver.get("https://es.uadyvirtual.uady.mx/login/index.php");
     driver.findElement(By.id("username")).click();
@@ -68,7 +68,7 @@ public class TestCoronavirus {
     
   
   
-  public void testCoronavirus() throws Exception {
+  /*public void testCoronavirus() throws Exception {
 	    driver.get("https://www.google.com.mx/webhp?hl=es&tab=vw");
 	    driver.findElement(By.name("q")).sendKeys(Keys.DOWN);
 	    driver.findElement(By.name("q")).clear();
@@ -79,7 +79,7 @@ public class TestCoronavirus {
 	    //Warning: assertTextPresent may require manual changes
 	    assertThat("Todo sobre el COVID-19", is(textoEjecucion));
 	    assertTrue(driver.findElement(By.cssSelector("BODY")).getText().matches("^[\\s\\S]*Todo sobre el COVID-19[\\s\\S]*$"));
-	  }
+	  }*/
 
   @After
   public void tearDown() throws Exception {
