@@ -27,7 +27,7 @@ public class TestCoronavirus {
     js = (JavascriptExecutor) driver;
   }
 
-  @Test
+  /*@Test
   public void testUntitledTestCase() throws Exception {
 	    driver.get("https://es.uadyvirtual.uady.mx/");
 	   
@@ -35,8 +35,8 @@ public class TestCoronavirus {
 	    String textoEjecucion = driver.getTitle();
 	    //ERROR: Caught exception [Error: locator strategy either id or name must be specified explicitly.]
 	    assertThat("UADY Virtual Educación Superior: Ingresar al sitio",is(textoEjecucion));
-	  }
-  /*@Test
+	  }*/
+  @Test
   public void testDatosIncorrectos() throws Exception {
     driver.get("https://es.uadyvirtual.uady.mx/login/index.php");
     driver.findElement(By.id("username")).click();
@@ -64,7 +64,7 @@ public class TestCoronavirus {
     String textoEjecucion = driver.findElement(By.xpath("/html/body/div[2]/nav/ul[2]/li[2]/div/div/div/div/div/a/span/span[1]")).getText();
     String textoEsperado = "LUIS ALBERTO PENICHE CHABLE";
     assertThat(textoEsperado, is(textoEjecucion));
-  } */
+  }
     
   
   
