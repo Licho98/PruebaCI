@@ -41,7 +41,7 @@ public class TestCoronavirus {
     driver.get("https://es.uadyvirtual.uady.mx/login/index.php");
     driver.findElement(By.id("username")).click();
     driver.findElement(By.id("username")).clear();
-    driver.findElement(By.id("username")).sendKeys("a18211328");
+    driver.findElement(By.id("username")).sendKeys("prueba");
     driver.findElement(By.id("password")).clear();
     driver.findElement(By.id("password")).sendKeys("pruebaclase");
     driver.findElement(By.id("loginbtn")).click();
