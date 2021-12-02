@@ -36,7 +36,7 @@ public class TestCoronavirus {
 	    //ERROR: Caught exception [Error: locator strategy either id or name must be specified explicitly.]
 	    assertThat("UADY Virtual Educación Superior: Ingresar al sitio",is(textoEjecucion));
 	  }*/
-  @Test
+  /*@Test
   public void testDatosIncorrectos() throws Exception {
     driver.get("https://es.uadyvirtual.uady.mx/login/index.php");
     driver.findElement(By.id("username")).click();
@@ -49,7 +49,7 @@ public class TestCoronavirus {
     String textoEjecucion = driver.findElement(By.xpath("/html/body/div[1]/div[2]/div/section/div/div[2]/div/div/div/div/div[1]/div")).getText();
     String textoEsperado = "Datos erróneos. Por favor, inténtelo otra vez.";
     assertThat(textoEsperado, is(textoEjecucion));
-  }
+  }*/
     
   @Test
   public void testDatosCorrectos() throws Exception {
