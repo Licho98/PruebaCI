@@ -58,7 +58,7 @@ public class TestCoronavirus {
     driver.findElement(By.id("username")).clear();
     driver.findElement(By.id("username")).sendKeys("a18211328");
     driver.findElement(By.id("password")).clear();
-    driver.findElement(By.id("password")).sendKeys("");
+    driver.findElement(By.id("password")).sendKeys("Licho1998");
     driver.findElement(By.id("loginbtn")).click();
     pause(5000);
     String textoEjecucion = driver.findElement(By.xpath("/html/body/div[2]/nav/ul[2]/li[2]/div/div/div/div/div/a/span/span[1]")).getText();
